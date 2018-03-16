@@ -4,7 +4,7 @@ import { HttpModule } from '@angular/http';
 import { FormsModule } from '@angular/forms';
 import { InMemoryWebApiModule } from 'angular-in-memory-web-api';
 import { AppComponent } from './app.component'
-import { EntryComponent, EntryListComponent, EntryService } from './entries';
+import { EntryComponent, EntryListComponent, EntryService, EntryCommentFormComponent } from './entries';
 import { InMemoryEntryService } from './backend';
 
 @NgModule({
@@ -20,7 +20,8 @@ import { InMemoryEntryService } from './backend';
     declarations: [
         AppComponent,
         EntryComponent,
-        EntryListComponent
+        EntryListComponent,
+        EntryCommentFormComponent
     ],
     bootstrap: [AppComponent]
 })
